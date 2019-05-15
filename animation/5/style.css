@@ -1,0 +1,48 @@
+@keyframes changePos {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate3d(150px, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(150px, 150px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 150px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#wrapper {
+
+}
+
+#node {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: translateZ(0);
+    /*transition: height 4s linear, width 4s linear;*/
+}
+#neighbour {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#node:hover {
+    animation: changePos 4s linear infinite;
+}
+
+/*#wrapper:hover > #node {
+    transform: translateX(300px);
+    background-color: yellow;
+}*/

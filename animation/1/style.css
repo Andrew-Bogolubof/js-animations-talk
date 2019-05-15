@@ -1,0 +1,11 @@
+#node {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: transform 1s ease-out, background-color 1s linear;
+}
+
+#wrapper:hover > #node {
+    transform: translateX(300px);
+    background-color: yellow;
+}
